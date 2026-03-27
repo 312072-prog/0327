@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 靈感短文產生器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>✨ 短文產生器</h1>
+        
+        <div class="input-group">
+            <label for="topic">關於什麼？</label>
+            <input type="text" id="topic" placeholder="例如：貓咪、下雨天、珍珠奶茶...">
+        </div>
+
+        <div class="input-group">
+            <label for="mood">文章語氣</label>
+            <select id="mood">
+                <option value="happy">輕快愉悅</option>
+                <option value="sad">感性憂傷</option>
+                <option value="pro">專業正式</option>
+                <option value="funny">幽默風趣</option>
+            </select>
+        </div>
+
+        <button id="generate-btn">立即生成短文</button>
+        <button id="copy-btn" class="secondary">一鍵複製內容</button>
+
+        <div id="result-area">生成的短文將會顯示在這裡...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
